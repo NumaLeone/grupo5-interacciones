@@ -17,9 +17,9 @@ const buttonVariant = cva("rounded-lg", {
       ],
     },
     size: {
-      small: ["px-4 py-2 text-xs"],
-      medium: ["px-4 py-3 text-sm"],
-      large: ["px-4 py-3 text-base"],
+      small: ["px-4 py-2 text-small"],
+      medium: ["px-4 py-3 text-medium"],
+      large: ["px-4 py-3 text-large"],
     },
   },
   defaultVariants: {
