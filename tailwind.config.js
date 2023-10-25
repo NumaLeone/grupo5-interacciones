@@ -18,6 +18,9 @@ module.exports = {
           10: "#EBEBEB",
         },
       },
+      width: {
+        large: "358px",
+      },
     },
     fontSize: {
       small: "12px",

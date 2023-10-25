@@ -4,7 +4,7 @@ const DesignSystem = () => {
   return (
     <>
       <Button variant={"outlined"}>Outlined</Button>
-      <Button variant={"fulfilled"}>Fullfiled</Button>
+      <Button variant={"fulfilled"}>Fulfilled</Button>
     </>
   );
 };
