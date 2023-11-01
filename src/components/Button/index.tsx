@@ -12,7 +12,7 @@ const buttonVariant = cva("rounded-lg", {
       ],
       outlined: [
         "bg-white text-primary-100 border border-primary-100",
-        "hover:bg-violet-300",
+        "hover:bg-blue-300",
         "disabled:bg-grey-300 disabled:border-grey-300 disabled: text-grey-700",
       ],
     },

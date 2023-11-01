@@ -31,7 +31,10 @@ module.exports = {
     },
     fontSize: {
       '4xl': ['2rem', '2.25rem'], // Establece el tamaño de fuente y la altura de línea para text-4xl
+      '3xl':['1.875rem','2.25rem'],
       '2xl': ['1.5rem', '1.75rem'],
+      'xl':['1.25rem','1.75rem'],
+      'sm':['0.875rem','1.25rem'],
       'navBar': '0.8rem',
       'ingredientsCard': '1.5rem',
       'ingredientName': '1.25rem',

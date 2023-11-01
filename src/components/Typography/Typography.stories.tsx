@@ -12,5 +12,5 @@ type Story = StoryObj<typeof Typography>;
 
 export const Default: Story = {
     name: "Default",
-    render: (args) => <Typography {...args}>Button</Typography>,
+    render: (args) => <Typography {...args}>Typography</Typography>,
 };
