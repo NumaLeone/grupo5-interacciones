@@ -1,4 +1,4 @@
-import { VariantProps, cva } from "class-variance-authority";
+import {VariantProps, cva} from "class-variance-authority";
 import React from "react";
 
 const typographyVariant = cva("text-base", {
@@ -8,11 +8,11 @@ const typographyVariant = cva("text-base", {
             body1: ["font-normal mb-2"],
             body2: ["font-normal mb-2"],
         },
-        weight:{
-
-        }
+        weight: {}
     },
     defaultVariants: {
+
+
         type: "body1",
     },
 });
@@ -23,9 +23,9 @@ export interface TypographyProps
     variantType: "h1" | "body1" | "body2" | null | undefined;
 }
 
-const Typography: React.FC<TypographyProps> = ({ variantType, children, ...props }) => {
+const Typography: React.FC<TypographyProps> = ({variantType, children, ...props}) => {
     return (
-        <div className={typographyVariant({ type: variantType })} {...props}>
+        <div className={typographyVariant({type: variantType})} {...props}>
             {children}
         </div>
     );
