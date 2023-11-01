@@ -13,6 +13,6 @@ type Story = StoryObj<typeof FilterButton>;
 export const Default: Story = {
     name: "Default",
     render: (args) => (
-        <FilterButton {...args}/>
+        <FilterButton {...args} text={'filter'}/>
     ),
 };
