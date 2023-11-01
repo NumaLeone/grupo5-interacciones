@@ -1,15 +1,30 @@
-import HomeIcon from "../../icons/navbar/HomeIcon";
-import SearchIcon from "../../icons/navbar/SearchIcon";
-import CartIcon from "../../icons/navbar/CartIcon";
-import AccountIcon from "../../icons/navbar/AccountIcon";
+import React from "react";
+interface RecipeCardInterface {
+    name: string,
+    price: number,
+    pricePerKG: number,
+    saved?: boolean,
+    img: string
+}
 
-const TextField = ()=>{
-    return(<>
-        <HomeIcon checked={true}/>
-        <SearchIcon checked={true}/>
-        <CartIcon checked={true}/>
-        <AccountIcon checked={true}/>
-        </>)
+const handleClick = () =>{
+    console.log(1)
+    return 1
+}
+
+const TextField = ({name, price, pricePerKG, saved = false, img}: RecipeCardInterface) => {
+
+
+    return (
+        <>
+            <input
+                className={"bg-secondary-0 text-secondary-40 px-4 py-3 text-large w-large rounded-lg shadow-cardShadow"}
+                type="text"
+                placeholder={"TextField"}
+            />
+        </>
+    );
+
 }
 
 export default TextField;
