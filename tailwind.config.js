@@ -21,11 +21,12 @@ module.exports = {
       width: {
         large: "358px",
       },
+      boxShadow:{
+        cardShadow: "0px 0px 2px 0px rgba(0, 0, 0, 0.55)"
+      },
     },
     fontSize: {
-      small: "12px",
-      medium: "20px",
-      large: "30px",
+      '4xl': ['2.25rem', '2.5rem'], // Establece el tamaño de fuente y la altura de línea para text-4xl
     },
   },
   plugins: [],
