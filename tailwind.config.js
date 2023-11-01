@@ -12,6 +12,7 @@ module.exports = {
         },
         secondary: {
           100: "#343434",
+          95 : "#3C3C43E3",
           90: "#484848",
           70: "#717171",
           40: "#AEAEAE",
@@ -24,9 +25,13 @@ module.exports = {
       boxShadow:{
         cardShadow: "0px 0px 2px 0px rgba(0, 0, 0, 0.55)"
       },
+      fontFamily: {
+        SFProText: ['SF Pro Text', 'sans'],
+      },
     },
     fontSize: {
       '4xl': ['2.25rem', '2.5rem'], // Establece el tamaño de fuente y la altura de línea para text-4xl
+      'navBar': '0.625rem',
     },
   },
   plugins: [],
