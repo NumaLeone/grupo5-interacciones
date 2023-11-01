@@ -1,8 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Button from "./index";
 import BookmarkButton from "./index";
 
-const meta: Meta<typeof Button> = {
+const meta: Meta<typeof BookmarkButton> = {
     title: "BookmarkButton",
     component: BookmarkButton,
 };
