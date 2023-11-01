@@ -1,4 +1,4 @@
-import addToCartButton from "../AddToCartButton";
+import img1 from "../../images/img.png"
 import AddToCartButton from "../AddToCartButton";
 import BookmarkButton from "../BookmarkButton";
 interface IngredientCardInterface {
@@ -14,7 +14,7 @@ const handleClick = () =>{
     return 1
 }
 
-const IngredientCard = ({name, price, pricePerKG, saved = false, img}: IngredientCardInterface) => {
+const IngredientCard = ({name, price, pricePerKG, saved = false, img = img1}: IngredientCardInterface) => {
 
     return (
         <>
