@@ -12,6 +12,5 @@ type Story = StoryObj<typeof IngredientCard>;
 
 export const Default: Story = {
     name: "Default",
-    render: (args) => <IngredientCard {...args}>Button</IngredientCard>,
+    render: (args) => <IngredientCard {...args} />,
 };
-
