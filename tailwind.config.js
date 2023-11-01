@@ -31,7 +31,7 @@ module.exports = {
     },
     fontSize: {
       '4xl': ['2.25rem', '2.5rem'], // Establece el tamaño de fuente y la altura de línea para text-4xl
-      'navBar': '0.625rem',
+      'navBar': '0.8rem',
     },
   },
   plugins: [],
