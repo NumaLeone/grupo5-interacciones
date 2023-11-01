@@ -8,7 +8,7 @@ const FilterButton = ({text, selected = false}: FilterButtonInterface) => {
 
     return (
         <>
-            <button className={`mi-w-14 h-9 rounded-md py-0 px-2 ${extraStyles}`}>{text}</button>
+            <button className={`h-9 rounded-md py-0 px-2 ${extraStyles}`}>{text}</button>
         </>
     )
 

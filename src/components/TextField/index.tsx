@@ -5,15 +5,15 @@ const handleClick = () =>{
     return 1
 }
 
-const TextField = () => {
+const TextField = (props: any) => {
 
 
     return (
         <>
             <input
-                className={"bg-secondary-0 text-secondary-40 px-4 py-3 text-large w-large rounded-lg shadow-cardShadow"}
+                className={"bg-secondary-10 text-secondary-40 px-4 py-2 text-ingredientName w-large rounded-lg shadow-cardShadow"}
                 type="text"
-                placeholder={"TextField"}
+                placeholder={props.text}
             />
         </>
     );

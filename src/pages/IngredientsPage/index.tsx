@@ -1,11 +1,23 @@
-import Button from "../../components/Button";
-import BookmarkButton from "../../components/BookmarkButton";
 import FilterButton from "../../components/FilterButton";
 import IngredientCard from "../../components/IngredientCard";
+import butter_img from '../../images/butter.jpg'
+import sugar_img from '../../images/sugar.jpeg'
+import eggs_img from '../../images/eggs.jpeg'
+import honey_img from '../../images/honey.jpeg'
+import msg_img from '../../images/msg.jpeg'
+import black_pepper_img from '../../images/black-pepper.jpg'
+
+
+
+
 import img from '../../images/img.png'
+
 import Navbar from "../../components/Navbar";
 import Typography from "../../components/Typography";
-import RecipeCard from "../../components/RecipeCard";
+import TextField from "../../components/TextField";
+import BookmarkIcon from "../../icons/BookmarkIcon";
+import React from "react";
+import BackArrowIcon from "../../icons/BackArrowIcon";
 
 const DesignSystem = () => {
 
@@ -15,36 +27,51 @@ const DesignSystem = () => {
     }
   return (
     <>
-        <div className={"mb-2"}>
-      <Button variant={"outlined"}>Outlined</Button>
+        <div className="overflow-hidden">
+            <div className="flex justify-between p-4">
+                <button className='p-1 h-10 w-10' onClick={handleClick}>
+                    <BackArrowIcon size={30} fill={"#549E83"}/>
+                </button>
+                <button className='p-1 h-10 w-10' onClick={handleClick}>
+                    <BookmarkIcon checked={true} size={40} color={"#549E83"}/>
+                </button>
+            </div>
+            <div className={"flex justify-start gap-4 mb-6 mt-2 ml-4"}>
+                <Typography variantType={"h1"}>Ingredients</Typography>
+                <div className="-rotate-90">
+                    <BackArrowIcon size={30} fill={"black"}/>
+
+                </div>
+
+            </div>
+            <div className={"mb-6 flex w-full justify-center"}>
+                <TextField text={"Search ingredients..."}/>
+            </div>
+            <div className={"ml-4"}>
+                <Typography variantType={"h2"}>Category</Typography>
+            </div>
+
         </div>
-        <div className={"mb-2"}>
-      <Button variant={"fulfilled"}>Fulfilled</Button>
+
+        <div className={"mb-2 flex overflow-x-scroll p-4 gap-3"}>
+            <FilterButton text={"All"} selected={true} />
+            <FilterButton text={"Breakfast"} selected={false} />
+            <FilterButton text={"Dinner"} selected={false} />
+            <FilterButton text={"Desserts"} selected={false} />
+            <FilterButton text={"Lunch"} selected={false} />
+            <FilterButton text={"Gay"} selected={false} />
         </div>
-        <div className={"mb-2"}>
-           <BookmarkButton size={24} checked={true} onClick={handleClick}></BookmarkButton>
+
+        <div className={"grid grid-cols-2 gap-3 p-3"}>
+            <IngredientCard name={"Butter"} price={100} pricePerKG={7.49} img={butter_img}/>
+            <IngredientCard name={"Sugar"} price={100} pricePerKG={5.20} img={sugar_img}/>
+            <IngredientCard name={"Eggs"} price={100} pricePerKG={1.6} img={eggs_img}/>
+            <IngredientCard name={"Honey"} price={100} pricePerKG={15.9} img={honey_img}/>
+            <IngredientCard name={"MSG"} price={100} pricePerKG={5} img={msg_img}/>
+            <IngredientCard name={"Black Pepper"} price={100} pricePerKG={0.3} img={black_pepper_img}/>
         </div>
-        <div className={"mb-2"}>
-            <BookmarkButton size={32} checked={false} onClick={handleClick}></BookmarkButton>
-        </div>
-        <div className={"mb-2"}>
-            <FilterButton text={"Selected"} selected={true} />
-        </div>
-        <div className={"mb-2"}>
-            <FilterButton text={"Unselected"} selected={false} />
-        </div>
-        <div className={"mb-40"}>
-            <IngredientCard name={"name"} price={100} pricePerKG={1} img={img}/>
-        </div>
-        <div className={"mb-40"}>
-            <RecipeCard name={"name"} price={100} pricePerKG={1} img={img}/>
-        </div>
-        <div className={"mb-2"}>
-            <Typography variantType={"h1"}>Hola</Typography>
-            <Typography variantType={"body1"}>Hola</Typography>
-            <Typography variantType={"body2"}>Hola</Typography>
-        </div>
-        <div className={"mb-2"}>
+
+        <div className={"fixed w-full bottom-0 mb-2"}>
             <Navbar/>
         </div>
     </>

@@ -16,7 +16,7 @@ module.exports = {
           90: "#484848",
           70: "#717171",
           40: "#AEAEAE",
-          10: "#EBEBEB",
+          10: "#f8f8f8",
         },
       },
       width: {
@@ -30,8 +30,11 @@ module.exports = {
       },
     },
     fontSize: {
-      '4xl': ['2.25rem', '2.5rem'], // Establece el tamaño de fuente y la altura de línea para text-4xl
+      '4xl': ['2rem', '2.25rem'], // Establece el tamaño de fuente y la altura de línea para text-4xl
+      '2xl': ['1.5rem', '1.75rem'],
       'navBar': '0.8rem',
+      'ingredientsCard': '1.5rem',
+      'ingredientName': '1.25rem',
     },
   },
   plugins: [],

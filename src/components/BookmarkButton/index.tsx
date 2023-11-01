@@ -1,5 +1,6 @@
 import React from "react";
 import BookmarkIcon from "../../icons/BookmarkIcon";
+import addToCart from "../../icons/AddToCart.svg";
 
 interface BookmarkButtonProps {
     checked: boolean,
@@ -10,7 +11,9 @@ interface BookmarkButtonProps {
 const BookmarkButton = ({checked, onClick, size}: BookmarkButtonProps) => {
     return (
         <>
-            <button onClick={onClick}><BookmarkIcon checked={checked} size={size} color={"#549E83"}/></button>
+            <button className='p-1 rounded-full h-10 w-10 bg-secondary-10' onClick={onClick}>
+                <BookmarkIcon checked={checked} size={size} color={"#549E83"}/>
+            </button>
         </>)
 
 }
