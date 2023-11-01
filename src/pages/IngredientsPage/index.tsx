@@ -6,7 +6,6 @@ import img from '../../images/img.png'
 import Navbar from "../../components/Navbar";
 import Typography from "../../components/Typography";
 import RecipeCard from "../../components/RecipeCard";
-import TextField from "../../components/TextField";
 
 const DesignSystem = () => {
 
@@ -29,9 +28,6 @@ const DesignSystem = () => {
             <BookmarkButton size={32} checked={false} onClick={handleClick}></BookmarkButton>
         </div>
         <div className={"mb-2"}>
-            <TextField />
-        </div>
-        <div className={"mb-2"}>
             <FilterButton text={"Selected"} selected={true} />
         </div>
         <div className={"mb-2"}>
@@ -40,7 +36,7 @@ const DesignSystem = () => {
         <div className={"mb-40"}>
             <IngredientCard name={"name"} price={100} pricePerKG={1} img={img}/>
         </div>
-        <div className={"mb-10"}>
+        <div className={"mb-40"}>
             <RecipeCard name={"name"} price={100} pricePerKG={1} img={img}/>
         </div>
         <div className={"mb-2"}>

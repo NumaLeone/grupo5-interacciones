@@ -1,18 +1,11 @@
 import React from "react";
-interface RecipeCardInterface {
-    name: string,
-    price: number,
-    pricePerKG: number,
-    saved?: boolean,
-    img: string
-}
 
 const handleClick = () =>{
     console.log(1)
     return 1
 }
 
-const TextField = ({name, price, pricePerKG, saved = false, img}: RecipeCardInterface) => {
+const TextField = () => {
 
 
     return (
