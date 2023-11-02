@@ -37,7 +37,7 @@ const DesignSystem = () => {
                 </div>
             </div>
             <div className={"mb-6 flex w-full justify-center"}>
-                <TextField text={"Search ingredients..."}/>
+                <TextField text={"Search ingredients..."} variant={"searchbar"}/>
             </div>
             <div className={"ml-4"}>
                 <Typography variantType={"h2"} variantWeight={"medium"}>Category</Typography>
