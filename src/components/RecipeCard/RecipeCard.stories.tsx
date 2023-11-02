@@ -13,5 +13,5 @@ type Story = StoryObj<typeof RecipeCard>;
 
 export const Default: Story = {
   name: "Default",
-  render: (args) => <RecipeCard {...args} name={"Recipe Card"} img={img} />,
+  render: (args) => <RecipeCard {...args} name={"[Recipe name]"} time={"30 mins"} steps={"4 steps"} img={img} />,
 };
