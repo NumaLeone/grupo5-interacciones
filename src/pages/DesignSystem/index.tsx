@@ -40,9 +40,9 @@ const DesignSystem = () => {
         <div className={"mb-40"}>
             <IngredientCard name={"name"} price={100} pricePerKG={1} img={img}/>
         </div>
-        <div className={"mb-10"}>
-            <RecipeCard name={"name"} price={100} pricePerKG={1} img={img}/>
-        </div>
+        {/*<div className={"mb-10"}>*/}
+        {/*    <RecipeCard name={"[Recipe name]"} time={"30 mins"} steps={"4 steps"} img={img}/>*/}
+        {/*</div>*/}
         <div className={"mb-2"}>
             <Typography variantType={"h1"} variantWeight={"normal"}>Hola</Typography>
             <Typography variantType={"body1"} variantWeight={"normal"}>Hola</Typography>

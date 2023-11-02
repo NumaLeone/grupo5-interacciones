@@ -16,7 +16,7 @@ const handleClick = () =>{
     return 1
 }
 
-const RecipeCard = ({name, time, steps, price, pricePerKG, saved = false, img}: RecipeCardInterface) => {
+const RecipeCard = ({name, time, steps, img}: RecipeCardInterface) => {
 
 
     return (
