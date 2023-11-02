@@ -44,9 +44,9 @@ const DesignSystem = () => {
             <RecipeCard name={"name"} price={100} pricePerKG={1} img={img}/>
         </div>
         <div className={"mb-2"}>
-            <Typography variantType={"h1"}>Hola</Typography>
-            <Typography variantType={"body1"}>Hola</Typography>
-            <Typography variantType={"body2"}>Hola</Typography>
+            <Typography variantType={"h1"} variantWeight={"normal"}>Hola</Typography>
+            <Typography variantType={"body1"} variantWeight={"normal"}>Hola</Typography>
+            <Typography variantType={"body2"} variantWeight={"normal"}>Hola</Typography>
         </div>
         <div className={"mb-2"}>
             <Navbar/>

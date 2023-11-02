@@ -6,12 +6,6 @@ import eggs_img from '../../images/eggs.jpeg'
 import honey_img from '../../images/honey.jpeg'
 import msg_img from '../../images/msg.jpeg'
 import black_pepper_img from '../../images/black-pepper.jpg'
-
-
-
-
-import img from '../../images/img.png'
-
 import Navbar from "../../components/Navbar";
 import Typography from "../../components/Typography";
 import TextField from "../../components/TextField";
@@ -28,7 +22,7 @@ const DesignSystem = () => {
   return (
     <>
         <div className="overflow-hidden">
-            <div className="flex justify-between p-4">
+            <div className="flex justify-between p-4 ">
                 <button className='p-1 h-10 w-10' onClick={handleClick}>
                     <BackArrowIcon size={30} fill={"#549E83"}/>
                 </button>
@@ -37,18 +31,16 @@ const DesignSystem = () => {
                 </button>
             </div>
             <div className={"flex justify-start gap-4 mb-6 mt-2 ml-4"}>
-                <Typography variantType={"h1"}>Ingredients</Typography>
+                <Typography variantType={"h1"} variantWeight={"bold"}>Ingredients</Typography>
                 <div className="-rotate-90">
                     <BackArrowIcon size={30} fill={"black"}/>
-
                 </div>
-
             </div>
             <div className={"mb-6 flex w-full justify-center"}>
                 <TextField text={"Search ingredients..."}/>
             </div>
             <div className={"ml-4"}>
-                <Typography variantType={"h2"}>Category</Typography>
+                <Typography variantType={"h2"} variantWeight={"medium"}>Category</Typography>
             </div>
 
         </div>
@@ -59,7 +51,7 @@ const DesignSystem = () => {
             <FilterButton text={"Dinner"} selected={false} />
             <FilterButton text={"Desserts"} selected={false} />
             <FilterButton text={"Lunch"} selected={false} />
-            <FilterButton text={"Gay"} selected={false} />
+            <FilterButton text={"Keto"} selected={false} />
         </div>
 
         <div className={"grid grid-cols-2 gap-3 p-3"}>
@@ -69,9 +61,15 @@ const DesignSystem = () => {
             <IngredientCard name={"Honey"} price={100} pricePerKG={15.9} img={honey_img}/>
             <IngredientCard name={"MSG"} price={100} pricePerKG={5} img={msg_img}/>
             <IngredientCard name={"Black Pepper"} price={100} pricePerKG={0.3} img={black_pepper_img}/>
+            <IngredientCard name={"Butter"} price={100} pricePerKG={7.49} img={butter_img}/>
+            <IngredientCard name={"Sugar"} price={100} pricePerKG={5.20} img={sugar_img}/>
+            <IngredientCard name={"Eggs"} price={100} pricePerKG={1.6} img={eggs_img}/>
+            <IngredientCard name={"Honey"} price={100} pricePerKG={15.9} img={honey_img}/>
+            <IngredientCard name={"MSG"} price={100} pricePerKG={5} img={msg_img}/>
+            <IngredientCard name={"Black Pepper"} price={100} pricePerKG={0.3} img={black_pepper_img}/>
         </div>
-
-        <div className={"fixed w-full bottom-0 mb-2"}>
+        <div className={"h-40 text-white"}></div>
+        <div className={"fixed w-full bottom-0"}>
             <Navbar/>
         </div>
     </>

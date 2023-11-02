@@ -1,13 +1,6 @@
 import React from "react";
 
-const handleClick = () =>{
-    console.log(1)
-    return 1
-}
-
 const TextField = (props: any) => {
-
-
     return (
         <>
             <input
@@ -17,7 +10,6 @@ const TextField = (props: any) => {
             />
         </>
     );
-
 }
 
 export default TextField;

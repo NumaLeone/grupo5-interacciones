@@ -1,30 +1,38 @@
 import {VariantProps, cva} from "class-variance-authority";
 import React from "react";
 
-const typographyVariant = cva("text-base", {
+const typographyVariant = cva("text-base font-SFProText", {
     variants: {
         type: {
-            h1: ["font-SFProText text-4xl font-bold "],
-            h2: ["font-SFProText text-2xl font-medium"],
-            body1: ["font-SFProText mb-2"],
-            body2: ["font-SFProText mb-2"],
+            h1: ["text-4xl"],
+            h2: ["text-3xl"],
+            h3:["text-2xl"],
+            h4:["text-xl"],
+            body1: ["mb-2"],
+            body2: ["text-sm mb-2"],
         },
-        weight: {}
+        weight: {
+            normal: ["font-normal"],
+            bold: ["font-bold"],
+            medium: ["font-medium"]
+        }
     },
     defaultVariants: {
         type: "body1",
+        weight: "normal"
     },
 });
 
 export interface TypographyProps
     extends Omit<React.HTMLProps<HTMLDivElement>, 'type'>,
         VariantProps<typeof typographyVariant> {
-    variantType: "h1" | "h2" | "body1" | "body2" | null | undefined;
+    variantType: "h1" | "h2" | "h3" | "h4" | "body1" | "body2";
+    variantWeight: "normal" | "bold" | "medium";
 }
 
-const Typography: React.FC<TypographyProps> = ({variantType, children, ...props}) => {
+const Typography: React.FC<TypographyProps> = ({variantType, variantWeight, children, ...props}) => {
     return (
-        <div className={typographyVariant({type: variantType})} {...props}>
+        <div className={typographyVariant({type: variantType, weight: variantWeight})} {...props}>
             {children}
         </div>
     );
