@@ -17,7 +17,7 @@ const RecipeCard = ({name='[Recipe name]', time='30 mins', steps='4 steps', img}
     return (
         <>
             <div className="h-64 w-64 relative">
-                <div className="h-64 w-64 bg-secondary-10 rounded-2xl shadow-cardShadow p-4 flex flex-col relative">
+                <div className="h-64 w-64 bg-secondary-10 rounded-2xl shadow-cardShadow p-4 flex flex-col relative cursor-pointer">
                     <div style={{ backgroundImage: `url(${img})` }} className="absolute inset-0 bg-cover"></div>
                     <div className="absolute inset-0 rounded-2xl bg-opacity-50 bg-black"></div>
                     <div className="relative z-10 justify-end flex">

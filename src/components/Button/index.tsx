@@ -42,7 +42,7 @@ const Button = ({ variant, size, text='Button', ...props }: ButtonProps) => {
       <button
         className={buttonVariant({ size: size, variant })}
         {...props}
-          disabled={true}
+        onClick={() => console.log('click')}
       >
         {text}
       </button>
