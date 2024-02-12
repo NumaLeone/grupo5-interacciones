@@ -1,5 +1,10 @@
 import {useState} from "react";
-const AddToCartButton = ()=>{
+
+interface BookmarkButtonProps {
+    size: number
+}
+
+const AddToCartButton = ({size}: BookmarkButtonProps) => {
 
     const [isClicked, setIsClicked] = useState(false);
 
@@ -14,8 +19,8 @@ return (
             onClick={handleClick}
         >
             <svg
-                width="40"
-                height="40"
+                width={size}
+                height={size}
                 viewBox="0 0 24 24"
                 className='p-0.5 text-greyscale-100'
                 fill="currentColor"

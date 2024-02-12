@@ -1,6 +1,5 @@
 import React from "react";
 import BookmarkIcon from "../../icons/BookmarkIcon";
-import addToCart from "../../icons/AddToCart.svg";
 
 interface BookmarkButtonProps {
     checked: boolean,

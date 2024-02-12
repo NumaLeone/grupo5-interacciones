@@ -12,5 +12,5 @@ type Story = StoryObj<typeof AddToCartButton>;
 
 export const Default: Story = {
     name: "Default",
-    render: (args) => <AddToCartButton />,
+    render: (args) => <AddToCartButton {...args}/>,
 };
