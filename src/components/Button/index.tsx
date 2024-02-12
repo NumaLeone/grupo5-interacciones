@@ -6,15 +6,18 @@ const buttonVariant = cva("rounded-lg", {
   variants: {
     variant: {
       fulfilled: [
-        "bg-primary-100 text-white",
-        "hover:bg-blue-300 hover:text-white",
-        "disabled:bg-grey-300 disabled: text-grey-700",
+        "bg-primary-500 text-white",
+        // "hover:bg-secondary-400 hover:text-white",
+        "disabled:bg-greysclae-400 disabled: text-greysclae-400",
       ],
       outlined: [
-        "bg-white text-primary-100 border border-primary-100",
-        "hover:bg-blue-300",
-        "disabled:bg-grey-300 disabled:border-grey-300 disabled: text-grey-700",
+        "bg-primary-300 text-primary-500 border border-primary-500",
+        // "hover:bg-secondary-400 hover:text-white",
+        "disabled:bg-greysclae-400 disabled:border-grey-300 disabled: text-greysclae-400",
       ],
+      error: [
+        "bg-state-error text-greyscale-white border",
+      ]
     },
     size: {
       small: ["px-4 py-2 text-small"],
@@ -39,6 +42,7 @@ const Button = ({ variant, size, ...props }: ButtonProps) => {
       <button
         className={buttonVariant({ size: size, variant })}
         {...props}
+          disabled={true}
       ></button>
     </>
   );

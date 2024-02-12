@@ -15,11 +15,11 @@ export const Default: Story = {
   render: (args) => <Button {...args}>Button</Button>,
 };
 
-export const Outlined: Story = {
-  name: "Outlined",
-  render: (args) => (
-    <Button {...args} variant={"outlined"}>
-      Button
-    </Button>
-  ),
-};
+// export const Outlined: Story = {
+//   name: "Outlined",
+//   render: (args) => (
+//     <Button {...args} variant={"outlined"}>
+//       Button
+//     </Button>
+//   ),
+// };
