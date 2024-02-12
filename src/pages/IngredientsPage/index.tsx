@@ -55,18 +55,18 @@ const DesignSystem = () => {
         </div>
 
         <div className={"grid grid-cols-2 gap-3 p-3"}>
-            <IngredientCard name={"Butter"} price={100} pricePerKG={7.49} img={butter_img}/>
-            <IngredientCard name={"Sugar"} price={100} pricePerKG={5.20} img={sugar_img}/>
-            <IngredientCard name={"Eggs"} price={100} pricePerKG={1.6} img={eggs_img}/>
-            <IngredientCard name={"Honey"} price={100} pricePerKG={15.9} img={honey_img}/>
-            <IngredientCard name={"MSG"} price={100} pricePerKG={5} img={msg_img}/>
-            <IngredientCard name={"Black Pepper"} price={100} pricePerKG={0.3} img={black_pepper_img}/>
-            <IngredientCard name={"Butter"} price={100} pricePerKG={7.49} img={butter_img}/>
-            <IngredientCard name={"Sugar"} price={100} pricePerKG={5.20} img={sugar_img}/>
-            <IngredientCard name={"Eggs"} price={100} pricePerKG={1.6} img={eggs_img}/>
-            <IngredientCard name={"Honey"} price={100} pricePerKG={15.9} img={honey_img}/>
-            <IngredientCard name={"MSG"} price={100} pricePerKG={5} img={msg_img}/>
-            <IngredientCard name={"Black Pepper"} price={100} pricePerKG={0.3} img={black_pepper_img}/>
+            <IngredientCard name={"Butter"} price={100} pricePerKG={7.49} img={butter_img} variant={"ingredient"} time={"30min"} difficulty={"Easy"}/>
+            <IngredientCard name={"Sugar"} price={100} pricePerKG={5.20} img={sugar_img} variant={"ingredient"} time={"30min"} difficulty={"Easy"}/>
+            <IngredientCard name={"Eggs"} price={100} pricePerKG={1.6} img={eggs_img} variant={"ingredient"} time={"30min"} difficulty={"Easy"}/>
+            <IngredientCard name={"Honey"} price={100} pricePerKG={15.9} img={honey_img} variant={"ingredient"} time={"30min"} difficulty={"Easy"}/>
+            <IngredientCard name={"MSG"} price={100} pricePerKG={5} img={msg_img} variant={"ingredient"} time={"30min"} difficulty={"Easy"}/>
+            <IngredientCard name={"Black Pepper"} price={100} pricePerKG={0.3} img={black_pepper_img} variant={"ingredient"} time={"30min"} difficulty={"Easy"}/>
+            <IngredientCard name={"Butter"} price={100} pricePerKG={7.49} img={butter_img} variant={"ingredient"} time={"30min"} difficulty={"Easy"}/>
+            <IngredientCard name={"Sugar"} price={100} pricePerKG={5.20} img={sugar_img} variant={"ingredient"} time={"30min"} difficulty={"Easy"}/>
+            <IngredientCard name={"Eggs"} price={100} pricePerKG={1.6} img={eggs_img} variant={"ingredient"} time={"30min"} difficulty={"Easy"}/>
+            <IngredientCard name={"Honey"} price={100} pricePerKG={15.9} img={honey_img} variant={"ingredient"} time={"30min"} difficulty={"Easy"}/>
+            <IngredientCard name={"MSG"} price={100} pricePerKG={5} img={msg_img} variant={"ingredient"} time={"30min"} difficulty={"Easy"}/>
+            <IngredientCard name={"Black Pepper"} price={100} pricePerKG={0.3} img={black_pepper_img} variant={"ingredient"} time={"30min"} difficulty={"Easy"}/>
         </div>
         <div className={"h-40 text-white"}></div>
         <div className={"fixed w-full bottom-0"}>

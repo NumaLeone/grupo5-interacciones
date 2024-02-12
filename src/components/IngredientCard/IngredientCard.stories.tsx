@@ -11,6 +11,11 @@ export default meta;
 type Story = StoryObj<typeof IngredientCard>;
 
 export const Default: Story = {
-    name: "Default",
-    render: (args) => <IngredientCard {...args} />,
+    name: "Ingredient",
+    render: (args) => <IngredientCard {...args} variant="ingredient"/>,
+};
+
+export const Recipe: Story = {
+    name: "Recipe",
+    render: (args) => <IngredientCard {...args} variant="recipe"/>,
 };

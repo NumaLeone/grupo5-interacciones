@@ -49,7 +49,7 @@ module.exports = {
       '3xl':['1.875rem','2.25rem'],
       '2xl': ['1.5rem', '1.75rem'],
       'xl':['1.25rem','1.75rem'],
-      'sm':['0.875rem','1.25rem'],
+      'sm':['0.85rem','1.2rem'],
       'navBar': '0.8rem',
       'ingredientsCard': '1.5rem',
       'ingredientName': '1.25rem',

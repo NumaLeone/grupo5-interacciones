@@ -29,7 +29,7 @@ const DesignSystem = () => {
             <BookmarkButton size={32}></BookmarkButton>
         </div>
         <div className={"mb-2"}>
-            <TextField />
+            <TextField text={"Text..."}/>
         </div>
         <div className={"mb-2"}>
             <FilterButton text={"Selected"}/>
@@ -38,7 +38,7 @@ const DesignSystem = () => {
             <FilterButton text={"Unselected"}/>
         </div>
         <div className={"mb-40"}>
-            <IngredientCard name={"name"} price={100} pricePerKG={1} img={img}/>
+            <IngredientCard name={"name"} price={100} pricePerKG={1} img={img} variant={"ingredient"} time={"30min"} difficulty={"Easy"}/>
         </div>
         {/*<div className={"mb-10"}>*/}
         {/*    <RecipeCard name={"[Recipe name]"} time={"30 mins"} steps={"4 steps"} img={img}/>*/}
