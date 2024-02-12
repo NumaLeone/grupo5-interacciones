@@ -38,7 +38,7 @@ module.exports = {
         large: "358px",
       },
       boxShadow:{
-        cardShadow: "0px 0px 2px 0px rgba(0, 0, 0, 0.55)"
+        cardShadow: "0px 0px 4px 0px rgba(0, 0, 0, 0.25)"
       },
       fontFamily: {
         SFProText: ['SF Pro Text', 'sans'],

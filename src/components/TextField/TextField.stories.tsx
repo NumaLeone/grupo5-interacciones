@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
 import TextField from "./index";
-import Button from "../Button";
 
 const meta: Meta<typeof TextField> = {
   title: "TextField",
@@ -13,10 +12,15 @@ type Story = StoryObj<typeof TextField>;
 
 export const Default: Story = {
   name: "Default",
-  render: (args) => <TextField text={"text"} variant={"default"}/>,
+  render: (args) => <TextField variant={"textField"} {...args}/>,
+};
+
+export const TextFieldError: Story = {
+    name: "TextFieldError",
+    render: (args) => <TextField variant={"textFieldError"} {...args}/>,
 };
 
 export const Searchbar: Story = {
     name: "Searchbar",
-    render: (args) => <TextField text={"text"} variant={"searchbar"}/>,
+    render: (args) => <TextField variant={"searchbar"} {...args} text="Search..."/>,
 };

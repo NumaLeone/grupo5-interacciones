@@ -1,20 +1,61 @@
 import React from "react";
 import SearchIcon from "../../icons/navbar/SearchIcon";
+import {cva, VariantProps} from "class-variance-authority";
 
-const TextField = (props: any) => {
+const textFieldVariant = cva("rounded-lg", {
+    variants: {
+        variant: {
+            textField: [
+                "bg-greyscale-100 text-greyscale-300 pl-4 py-2 text-ingredientName w-large rounded-lg shadow-cardShadow",
+            ],
+            searchbar: [
+                "bg-greyscale-100 text-greyscale-300 pl-12 py-2 text-ingredientName w-large rounded-lg shadow-cardShadow",
+            ],
+            textFieldError: [
+                "bg-greyscale-100 text-greyscale-300 pl-4 py-2 text-ingredientName w-large rounded-lg",
+                "border border-state-error"
+            ]
+        },
+    },
+    defaultVariants: {
+        variant: "textField",
+    },
+});
+
+export interface TextFieldInterface extends React.HTMLProps<HTMLInputElement>, VariantProps<typeof textFieldVariant> {
+    text: string,
+}
+
+const TextField = ({text="Text...", variant}: TextFieldInterface) => {
+
+    const [isFocused, setIsFocused] = React.useState(false);
+
+    const handleFocus = () => {
+        setIsFocused(true);
+    };
+
+    const handleBlur = () => {
+        setIsFocused(false);
+    };
+
     return (
         <>
-            <div>
-                <div className="absolute ml-2 mt-2" style={props.variant === "searchbar" ? {} : {display: "none"}}>
-                    <SearchIcon checked={false} size={32} />
+            <div className="">
+                <div className="absolute ml-3 mt-2.5" style={variant === "searchbar" ? {} : {display: "none"}}>
+                    <SearchIcon checked={isFocused} size={25} />
                 </div>
                 <input
-                    className={"bg-secondary-10 text-secondary-40 pl-12 py-2 text-ingredientName w-large rounded-lg shadow-cardShadow"}
+                    className={textFieldVariant({variant})}
+                    style={isFocused ? {border: "10px solid border-primary-500", outline: "none"} : {}}
                     type="text"
-                    placeholder={props.text}
-                    // style={props.variant === "searchbar" ? {padding: "12px"} : {padding: "2px"}}
+                    placeholder={text}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                 >
                 </input>
+                <div className="absolute ml-2 text-state-error" style={variant === "textFieldError" ? {} : {display: "none"}}>
+                    Error
+                </div>
             </div>
         </>
     );
