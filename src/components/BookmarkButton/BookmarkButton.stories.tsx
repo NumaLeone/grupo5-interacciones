@@ -12,5 +12,5 @@ type Story = StoryObj<typeof BookmarkButton>;
 
 export const Default: Story = {
     name: "Default",
-    render: (args) => <BookmarkButton {...args} size={32} />,
+    render: (args) => <BookmarkButton {...args} />,
 };

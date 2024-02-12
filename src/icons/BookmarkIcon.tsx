@@ -4,13 +4,19 @@ interface BookmarkIconInterface extends IconInterface {
     checked: boolean
 }
 
-const BookmarkIcon = ({size = 24, color = "#000", checked}: BookmarkIconInterface) => {
+const BookmarkIcon = ({size = 24, color = "text-primary-500", checked}: BookmarkIconInterface) => {
 
     return (
-        <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+            width={size}
+            height={size}
+            viewBox="0 0 24 24"
+            className={`${checked ? 'text-primary-500' : 'text-transparent stroke-primary-500'}`}
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M6.86499 20.5C6.71126 20.5 6.6452 20.453 6.60855 20.4099C6.56191 20.355 6.5 20.2292 6.5 19.9762V5.40839C6.5 4.68486 6.67605 4.22838 6.94057 3.95204C7.20128 3.67968 7.62711 3.5 8.30935 3.5H14.6907C15.3729 3.5 15.7987 3.67968 16.0594 3.95204C16.3239 4.22838 16.5 4.68486 16.5 5.40839V19.9762C16.5 20.2292 16.4381 20.355 16.3915 20.4099C16.3548 20.453 16.2887 20.5 16.135 20.5C16.0665 20.5 16.0097 20.4918 15.8741 20.3906C15.7089 20.2673 15.4968 20.0583 15.1182 19.6819C15.1177 19.6814 15.1171 19.6809 15.1166 19.6804L11.941 16.4648C11.812 16.3214 11.6392 16.2727 11.5031 16.2727C11.3558 16.2727 11.194 16.3273 11.0699 16.4537C11.0693 16.4544 11.0687 16.455 11.0681 16.4556L7.8834 19.6804C7.88287 19.6809 7.88234 19.6814 7.88181 19.6819C7.50325 20.0583 7.29108 20.2673 7.12589 20.3906C6.99029 20.4918 6.93353 20.5 6.86499 20.5Z"
-                fill={checked ? color : "transparent"} stroke={color}/>
+            />
         </svg>
 
 
