@@ -12,7 +12,7 @@ type Story = StoryObj<typeof Button>;
 
 export const Default: Story = {
   name: "Default",
-  render: (args) => <Button {...args}>Button</Button>,
+  render: (args) => <Button {...args} />
 };
 
 // export const Outlined: Story = {

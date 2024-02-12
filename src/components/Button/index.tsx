@@ -32,18 +32,20 @@ const buttonVariant = cva("rounded-lg", {
 });
 
 //reconoce como props todas las variants y todas las props base de un boton normal de HTML
-export interface ButtonProps
-  extends ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariant> {}
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariant> {
+  text: string,
+}
 
-const Button = ({ variant, size, ...props }: ButtonProps) => {
+const Button = ({ variant, size, text='Button', ...props }: ButtonProps) => {
   return (
     <>
       <button
         className={buttonVariant({ size: size, variant })}
         {...props}
           disabled={true}
-      ></button>
+      >
+        {text}
+      </button>
     </>
   );
 };
