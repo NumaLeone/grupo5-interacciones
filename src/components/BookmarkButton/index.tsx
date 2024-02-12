@@ -5,7 +5,7 @@ interface BookmarkButtonProps {
     size: number
 }
 
-const BookmarkButton = ({size}: BookmarkButtonProps) => {
+const BookmarkButton = ({size=40}: BookmarkButtonProps) => {
 
     const [isClicked, setIsClicked] = useState(false);
 
