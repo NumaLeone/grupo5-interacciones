@@ -17,16 +17,16 @@ const DesignSystem = () => {
   return (
     <>
         <div className={"mb-2"}>
-      <Button variant={"outlined"}>Outlined</Button>
+      <Button variant={"outlined"} text={"Button"}/>
         </div>
         <div className={"mb-2"}>
-      <Button variant={"fulfilled"}>Fulfilled</Button>
+      <Button variant={"fulfilled"} text={"Button"}/>
         </div>
         <div className={"mb-2"}>
-           <BookmarkButton size={24} checked={true} onClick={handleClick}></BookmarkButton>
+           <BookmarkButton size={24}></BookmarkButton>
         </div>
         <div className={"mb-2"}>
-            <BookmarkButton size={32} checked={false} onClick={handleClick}></BookmarkButton>
+            <BookmarkButton size={32}></BookmarkButton>
         </div>
         <div className={"mb-2"}>
             <TextField />
