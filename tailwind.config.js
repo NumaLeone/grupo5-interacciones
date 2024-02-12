@@ -5,19 +5,34 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          100: "#549E83",
-          90: "#65A88F",
-          70: "#87BBA8",
-          40: "#BBD8CD",
+          300: "#DDECE6",
+          400: "#AACFC1",
+          500: "#549E83",
+          600: "#4C8E76",
+          700: "#3B6F5C",
         },
         secondary: {
-          100: "#343434",
-          95 : "#3C3C43E3",
-          90: "#484848",
-          70: "#717171",
-          40: "#AEAEAE",
-          10: "#f8f8f8",
+          300: "#DDE2EC",
+          400: "#AAB7CF",
+          500: "#546F9E",
+          600: "#4C648E",
+          700: "#3B4E6F",
         },
+        greyscale: {
+          white: "#FFFFFF",
+          100 : "#EBEBEB",
+          200: "#D6D6D6",
+          300: "#AEAEAE",
+          400: "#858585",
+          500: "#5D5D5D",
+          600: "#343434",
+          translucid: "rgba(52, 52, 52, 0.89)",
+        },
+        state: {
+          success: "#57C45B",
+          error: "#FB3636",
+          warning: "#F4D63A",
+        }
       },
       width: {
         large: "358px",

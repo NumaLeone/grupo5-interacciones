@@ -10,14 +10,14 @@ const AddToCartButton = ()=>{
 return (
     <>
         <button
-            className={`rounded-full ${isClicked ? 'bg-secondary-40' : 'bg-primary-100'}`}
+            className={`rounded-full ${isClicked ? 'bg-greyscale-300' : 'bg-primary-500'}`}
             onClick={handleClick}
         >
             <svg
                 width="40"
                 height="40"
                 viewBox="0 0 24 24"
-                className='p-0.5 text-secondary-10'
+                className='p-0.5 text-greyscale-100'
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
             >
