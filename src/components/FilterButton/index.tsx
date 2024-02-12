@@ -3,8 +3,8 @@ interface FilterButtonInterface {
     selected?: boolean
 }
 
-const FilterButton = ({text, selected = false}: FilterButtonInterface) => {
-    const extraStyles = selected ? "bg-primary-100 text-white " : "bg-white text-primary-100 border border-primary-100"
+const FilterButton = ({text='Filter', selected = false}: FilterButtonInterface) => {
+    const extraStyles = selected ? "bg-primary-500 text-white " : "bg-white text-primary-500 border border-primary-500"
 
     return (
         <>
