@@ -46,12 +46,12 @@ const DesignSystem = () => {
         </div>
 
         <div className={"mb-2 flex overflow-x-scroll p-4 gap-3"}>
-            <FilterButton text={"All"} selected={true} />
-            <FilterButton text={"Breakfast"} selected={false} />
-            <FilterButton text={"Dinner"} selected={false} />
-            <FilterButton text={"Desserts"} selected={false} />
-            <FilterButton text={"Lunch"} selected={false} />
-            <FilterButton text={"Keto"} selected={false} />
+            <FilterButton text={"All"}/>
+            <FilterButton text={"Breakfast"}/>
+            <FilterButton text={"Dinner"}/>
+            <FilterButton text={"Desserts"}/>
+            <FilterButton text={"Lunch"}/>
+            <FilterButton text={"Keto"}/>
         </div>
 
         <div className={"grid grid-cols-2 gap-3 p-3"}>

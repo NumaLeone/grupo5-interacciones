@@ -32,10 +32,10 @@ const DesignSystem = () => {
             <TextField />
         </div>
         <div className={"mb-2"}>
-            <FilterButton text={"Selected"} selected={true} />
+            <FilterButton text={"Selected"}/>
         </div>
         <div className={"mb-2"}>
-            <FilterButton text={"Unselected"} selected={false} />
+            <FilterButton text={"Unselected"}/>
         </div>
         <div className={"mb-40"}>
             <IngredientCard name={"name"} price={100} pricePerKG={1} img={img}/>
