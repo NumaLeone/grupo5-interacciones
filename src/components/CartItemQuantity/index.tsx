@@ -23,9 +23,9 @@ const CartItemQuantity: React.FC<CartItemQuantityProps> = ({
       setItemQuantity(quantity - 1);
     }
   };
-  const handleTrashClick = () => {
-    // Aquí puedes manejar la lógica para eliminar el ítem del carrito
-  };
+  // const handleTrashClick = () => {
+  //   // Aquí puedes manejar la lógica para eliminar el ítem del carrito
+  // };
 
   return (
     <div className="h-12 w-52 flex items-center">
