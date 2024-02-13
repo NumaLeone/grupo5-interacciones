@@ -30,7 +30,7 @@ const CartItemQuantity: React.FC<CartItemQuantityProps> = ({
   return (
     <div className="h-12 w-52 flex items-center">
       <div className="flex flex-row w-full">
-        <Typography variantType="body2" variantWeight="bold">
+        <Typography type="body2" weight="bold">
           {"$" + price}
         </Typography>
         {quantity === 1 ? (

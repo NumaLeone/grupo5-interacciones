@@ -4,17 +4,19 @@ import React from "react";
 const typographyVariant = cva("text-base font-SFProText", {
   variants: {
     type: {
-      h1: ["text-4xl"],
-      h2: ["text-3xl"],
-      h3: ["text-2xl"],
-      h4: ["text-xl"],
+      h1: ["text-3xl"],
+      h2: ["text-2xl"],
+      h3: ["text-xl"],
+      s1: ["text-lg"],
       body1: ["text-base"],
       body2: ["text-sm"],
+      caption1: ["text-xs"],
     },
     weight: {
       normal: ["font-normal"],
       bold: ["font-bold"],
       medium: ["font-medium"],
+      light: ["font-light"],
     },
   },
   defaultVariants: {
@@ -26,13 +28,13 @@ const typographyVariant = cva("text-base font-SFProText", {
 export interface TypographyProps
   extends Omit<React.HTMLProps<HTMLDivElement>, "type">,
     VariantProps<typeof typographyVariant> {
-  variantType: "h1" | "h2" | "h3" | "h4" | "body1" | "body2";
-  variantWeight: "normal" | "bold" | "medium";
+  type: "h1" | "h2" | "h3" | "s1" | "body1" | "body2" | "caption1";
+  weight: "normal" | "bold" | "medium" | "light";
 }
 
 const Typography: React.FC<TypographyProps> = ({
-  variantType,
-  variantWeight,
+  type,
+  weight,
   children,
   className = "",
   ...props
@@ -40,8 +42,8 @@ const Typography: React.FC<TypographyProps> = ({
   return (
     <div
       className={`${typographyVariant({
-        type: variantType,
-        weight: variantWeight,
+        type,
+        weight,
       })} ${className}`}
       {...props}
     >

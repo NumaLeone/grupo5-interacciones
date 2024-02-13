@@ -20,13 +20,13 @@ const CartItemWithPhoto: React.FC<CartItemWithPhotoProps> = ({
         <img src={img} alt={name} className="h-11 w-11 rounded-full mr2.5" />
       </div>
       <div className="flex flex-col h-full py-1.5 ml-2.5 justify-center">
-        <Typography className="" variantType="body2" variantWeight="bold">
+        <Typography className="" type="body2" weight="bold">
           {name}
         </Typography>
         <Typography
           className=""
-          variantType="body2"
-          variantWeight="normal"
+          type="body2"
+          weight="normal"
         >{`${weight} ${weightUnit}`}</Typography>
       </div>
     </div>
