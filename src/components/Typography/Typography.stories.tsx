@@ -2,8 +2,8 @@ import { Meta, StoryObj } from "@storybook/react";
 import Typography from "./index";
 
 const meta: Meta<typeof Typography> = {
-    title: "Typography",
-    component: Typography,
+  title: "Typography",
+  component: Typography,
 };
 
 export default meta;
@@ -11,6 +11,5 @@ export default meta;
 type Story = StoryObj<typeof Typography>;
 
 export const Default: Story = {
-    name: "Default",
-    render: (args) => <Typography {...args}>Typography</Typography>,
+  render: (args) => <Typography {...args}>Typography</Typography>,
 };

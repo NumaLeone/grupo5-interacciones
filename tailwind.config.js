@@ -20,7 +20,7 @@ module.exports = {
         },
         greyscale: {
           white: "#FFFFFF",
-          100 : "#EBEBEB",
+          100: "#EBEBEB",
           200: "#D6D6D6",
           300: "#AEAEAE",
           400: "#858585",
@@ -32,28 +32,31 @@ module.exports = {
           success: "#57C45B",
           error: "#FB3636",
           warning: "#F4D63A",
-        }
+        },
       },
       width: {
         large: "358px",
       },
-      boxShadow:{
+      boxShadow: {
         cardShadow: "0px 0px 4px 0px rgba(0, 0, 0, 0.25)",
-        switchShadow: "0px 0px 3px 0px rgba(0, 0, 0, 0.25)"
+        switchShadow: "0px 0px 3px 0px rgba(0, 0, 0, 0.25)",
       },
       fontFamily: {
-        SFProText: ['SF Pro Text', 'sans'],
+        SFProText: ["SF Pro Text", "sans"],
       },
     },
     fontSize: {
-      '4xl': ['2rem', '2.25rem'], // Establece el tamaño de fuente y la altura de línea para text-4xl
-      '3xl':['1.875rem','2.25rem'],
-      '2xl': ['1.5rem', '1.75rem'],
-      'xl':['1.25rem','1.75rem'],
+      "4xl": ["2rem", "2.25rem"], // Establece el tamaño de fuente y la altura de línea para text-4xl
+      "3xl": ["1.875rem", "2.25rem"],
+      "2xl": ["1.5rem", "1.75rem"],
+      "xl": ["1.25rem", "1.75rem"],
+      "lg": ["1.125rem", "1.75rem"],
+      "base":["1rem","1.5rem"],
       'sm':['0.85rem','1.2rem'],
-      'navBar': '0.8rem',
-      'ingredientsCard': '1.5rem',
-      'ingredientName': '1.25rem',
+      'xs':['0.75rem','1rem'],
+      "navBar": "0.8rem",
+      "ingredientsCard": "1.5rem",
+      "ingredientName": "1.25rem",
     },
   },
   plugins: [],
