@@ -1,5 +1,4 @@
 import React from "react";
-import SearchIcon from "../../icons/navbar/SearchIcon";
 import {cva, VariantProps} from "class-variance-authority";
 
 const textFieldVariant = cva("rounded-lg", {
@@ -46,7 +45,11 @@ const TextField = ({text="Text...", variant}: TextFieldInterface) => {
             <div>
                 <div className="flex items-center">
                     <div className="absolute ml-3" style={variant === "searchbar" ? {} : {display: "none"}}>
-                        <SearchIcon checked={isFocused} size={25} />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path
+                                d="M8 16.1727C8 11.6647 11.6981 8 16.2472 8C20.7964 8 24.4944 11.6647 24.4944 16.1727C24.4944 17.9297 23.9169 19.5562 22.9544 20.8715L27.5846 25.4699C27.8582 25.751 28 26.1225 28 26.5241C28 27.3574 27.382 28 26.5208 28C26.1256 28 25.7305 27.8695 25.4468 27.5783L20.7862 22.9598C19.4894 23.8333 17.9392 24.3454 16.2472 24.3454C11.6981 24.3454 8 20.6807 8 16.1727ZM10.1479 16.1727C10.1479 19.506 12.8734 22.2169 16.2472 22.2169C19.6109 22.2169 22.3465 19.506 22.3465 16.1727C22.3465 12.8394 19.6109 10.1285 16.2472 10.1285C12.8734 10.1285 10.1479 12.8394 10.1479 16.1727Z"
+                                fill="#AEAEAE"/>
+                        </svg>
                     </div>
                     <input
                         className={textFieldVariant({variant})}
@@ -57,7 +60,8 @@ const TextField = ({text="Text...", variant}: TextFieldInterface) => {
                         onBlur={handleBlur}
                     >
                     </input>
-                    <button style={variant === "searchbar" || variant === "textFieldFilters" ? {marginLeft: '-2.5rem'} : {display: "none"}}>
+                    <button
+                        style={variant === "searchbar" || variant === "textFieldFilters" ? {marginLeft: '-2.5rem'} : {display: "none"}}>
                         <svg
                             className="margin-right-4"
                             width="20"
