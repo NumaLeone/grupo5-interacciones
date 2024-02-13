@@ -29,32 +29,23 @@ const CartItemQuantity: React.FC<CartItemQuantityProps> = ({
 
   return (
     <div className="h-12 w-52 flex items-center">
-      <div className="flex flex-row w-full">
-        <Typography type="body2" weight="bold">
+      <div className="flex flex-row w-full items-center">
+        <Typography type="body2" weight="bold" className="text-greyscale-600">
           {"$" + price}
         </Typography>
-        {quantity === 1 ? (
+        <button onClick={decreaseQuantity}>
           <img
-            src={TrashIcon}
-            alt="Trash Icon"
-            onClick={handleTrashClick}
-            className="ml-6 mr-9"
-          />
-        ) : (
-          <img
-            src={MinusIcon}
+            src={quantity === 1 ? TrashIcon : MinusIcon}
             alt="Minus Icon"
-            onClick={decreaseQuantity}
-            className="ml-6 mr-9"
+            className={quantity === 1 ? "ml-5 mr-6" : "ml-6 mr-7"}
           />
-        )}
-        <p>{quantity}</p>
-        <img
-          src={PlusIcon}
-          alt="Plus Icon"
-          onClick={increaseQuantity}
-          className="mx-9"
-        />
+        </button>
+        <Typography type="body1" weight="bold" className="text-greyscale-600">
+          {quantity}
+        </Typography>
+        <button onClick={increaseQuantity}>
+          <img src={PlusIcon} alt="Plus Icon" className="mx-8" />
+        </button>
       </div>
     </div>
   );
