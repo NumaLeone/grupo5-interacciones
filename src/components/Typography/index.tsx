@@ -1,7 +1,7 @@
 import { VariantProps, cva } from "class-variance-authority";
 import React from "react";
 
-const typographyVariant = cva("text-base font-SFProText", {
+const typographyVariant = cva("font-SFProText", {
   variants: {
     type: {
       h1: ["text-3xl"],
