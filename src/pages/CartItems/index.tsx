@@ -1,5 +1,6 @@
 import CartItemContainer from "../../components/CartItemContainer";
 import CartItemWithPhoto from "../../components/CartItemWithPhoto";
+import Recipe from "../../components/Recipe";
 import img from "../../images/img.png";
 
 const CartItems = () => {
@@ -19,6 +20,7 @@ const CartItems = () => {
         price={100}
         quantity={1}
       />
+      <Recipe recipeTitle="Recipe" />
     </div>
   );
 };
