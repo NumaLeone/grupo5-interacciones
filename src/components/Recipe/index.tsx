@@ -4,7 +4,7 @@ import RecipeSlideShow from "../RecipeSlideShow";
 // import PlaceholderImage from "../../images/img.png";
 import RecipeMenu from "../RecipeMenu";
 // import ButterImage from "../../images/butter.jpg";
-import RecipeTimeDifficulty from "../RecipeTime&Difficulty";
+import RecipeTimeDifficulty from "../RecipeTimeDifficulty";
 
 interface RecipeProps {
   recipeTitle: string;
