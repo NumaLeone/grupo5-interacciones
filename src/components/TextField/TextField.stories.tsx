@@ -15,6 +15,11 @@ export const Default: Story = {
   render: (args) => <TextField variant={"textField"} {...args}/>,
 };
 
+export const TextFieldFilters: Story = {
+    name: "TextFieldFilters",
+    render: (args) => <TextField variant={"textFieldFilters"} {...args}/>,
+};
+
 export const TextFieldError: Story = {
     name: "TextFieldError",
     render: (args) => <TextField variant={"textFieldError"} {...args}/>,
