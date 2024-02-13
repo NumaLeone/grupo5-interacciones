@@ -11,6 +11,5 @@ export default meta;
 type Story = StoryObj<typeof CartItemContainer>;
 
 export const Default: Story = {
-  name: "Default",
   render: (args) => <CartItemContainer {...args}></CartItemContainer>,
 };
