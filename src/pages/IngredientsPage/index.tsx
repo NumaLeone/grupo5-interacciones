@@ -12,8 +12,10 @@ import TextField from "../../components/TextField";
 import BookmarkIcon from "../../icons/BookmarkIcon";
 import React from "react";
 import BackArrowIcon from "../../icons/BackArrowIcon";
+import Select from "../../components/Select";
 
 const DesignSystem = () => {
+
   const handleClick = () => {
     console.log(1);
     return 1;
@@ -29,14 +31,7 @@ const DesignSystem = () => {
             <BookmarkIcon checked={true} size={40} color={"#549E83"} />
           </button>
         </div>
-        <div className={"flex justify-start gap-4 mb-6 mt-2 ml-4"}>
-          <Typography type={"h1"} weight={"bold"}>
-            Ingredients
-          </Typography>
-          <div className="-rotate-90">
-            <BackArrowIcon size={30} fill={"black"} />
-          </div>
-        </div>
+        <Select options={['Ingredients', 'Recipies']}></Select>
         <div className={"mb-6 flex w-full justify-center"}>
           <TextField text={"Search ingredients..."} variant={"searchbar"} />
         </div>
