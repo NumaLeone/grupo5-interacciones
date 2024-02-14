@@ -51,7 +51,7 @@ const DesignSystem = () => {
         <FilterButton text={"Keto"} />
       </div>
 
-      <div className={"grid grid-cols-2 gap-3 p-3"}>
+      <div className={"grid grid-cols-2 gap-3 p-3 ml-2"}>
         <IngredientCard
           name={"Butter"}
           price={100}
